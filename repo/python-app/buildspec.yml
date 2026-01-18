@@ -5,7 +5,10 @@ phases:
     runtime-versions:
       python: 3.11
     commands:
-      - echo "No build needed for Flask app"
+      - echo "Packaging for deployment"
+
 artifacts:
+  base-directory: python-app
   files:
     - '**/*'
+
