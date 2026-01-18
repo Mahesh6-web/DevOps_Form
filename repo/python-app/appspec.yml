@@ -6,13 +6,13 @@ files:
     destination: /home/ubuntu/python-app
 
 hooks:
-  AfterInstall:
-    - location: scripts/install.sh
+  ApplicationStop:
+    - location: scripts/stop.sh
       timeout: 300
       runas: root
 
-  ApplicationStop:
-    - location: scripts/stop.sh
+  AfterInstall:
+    - location: scripts/install.sh
       timeout: 300
       runas: root
 
