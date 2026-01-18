@@ -8,7 +8,8 @@ phases:
       - echo "Packaging for deployment"
 
 artifacts:
-  base-directory: python-app
+  base-directory: repo/python-app
   files:
     - '**/*'
+
 
